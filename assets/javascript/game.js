@@ -12,30 +12,23 @@ var blanksAndCorrectGuesses = [];
 
 
 
-
+// Reset
 function start(){
     document.getElementById("remaining-guesses").innerHTML = amountOfGuesses;
-    document.getElementById("amount-blank").innerHTML = blanksAndCorrectGuesses;
-    document.getElementById("incorrect-guesses").innerHTML = wrongGuesses;
+    document.getElementById("amount-blank").innerHTML = blanksAndCorrectGuesses.join(" ");
+    document.getElementById("incorrect-guesses").innerHTML = wrongGuesses.join(" ");
 
     amountOfGuesses = 6;
+    blanksAndCorrectGuesses = [];
+    wrongGuesses = [];
 
-    word = disneyMovies[Math.floor(math.random() * wordlist.length)];
+    lettersInWord = word.split("");
+    console.log(word);
 
+    for (var c = 0; c < blanks; c++){
+        blanksAndCorrectGuesses.push("_");
+    }console.log(blanksAndCorrectGuesses);
 
-
-
-
-
-
+    word = disneyMovies[Math.floor(Math.random() * disneyMovies.length)];
 }
-
-
-
-
-
-
-
-
-
 

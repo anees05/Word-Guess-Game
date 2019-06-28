@@ -1,28 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
-    <title>Hangman Homework</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <title>Word Guess Homework</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        
 </head>
 
 <body>
-    
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <h1><strong>Word Guess - Disney Edition</strong></h1>
+                <hr class="my-4">
+                <h4>Press any button to start!</h4>
+                <p class="text-success">Wins</p> <span id="wins">0</span>
+                <hr>
+                <p class="text-danger">Losses</p> <span id="losses">0</span>
+            </div>
+        </div>
 
-
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="class-header">
+                        <h2></strong>Can You Guess This Word?</strong></h2>
+                    </div>
+                    <div class="card-body">
+                        <h3 id="amount-blank">_ _ _ _ _ _ _ _ _ _ _ </h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p><strong>Incorrect Guesses:</strong></p> <span id="incorrect-guesses"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p><strong>Remaining Guesses:</strong></p> <span id="remaining-guesses">6</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-
-
-
-
-
-
-
-
-    <link rel="stylesheet" href="assets/javascript/game.js">
+<script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
